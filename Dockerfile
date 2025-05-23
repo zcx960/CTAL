@@ -11,8 +11,12 @@ COPY requirements.txt .
 # -r requirements.txt: Specifies the file from which to read package requirements.
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the application script into the container at /app
-COPY app.py .
+# Copy all Python application scripts into the container at /app
+# This will include app.py and streamlit_app.py
+COPY *.py .
 
-# Specify the command to run on container start
-CMD ["python", "app.py"]
+# Expose the default Streamlit port
+EXPOSE 8501
+
+# Specify the command to run on container start for the Streamlit app
+CMD ["streamlit", "run", "streamlit_app.py"]
