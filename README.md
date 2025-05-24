@@ -1,3 +1,6 @@
+For the Chinese version, please see [README_zh.md](README_zh.md)
+
+
 # Cryptocurrency Trend Analyzer with LLM
 
 ## Description
@@ -178,19 +181,4 @@ While not a substitute for manual UI testing, you can perform a very basic check
 *   **Data Volume for LLM:** Very long K-line data series are truncated before being sent to the LLM to keep prompts within reasonable limits. This might affect the analysis if critical data points are omitted.
 
 ---
-This README provides a comprehensive guide for users and developers of the Cryptocurrency Trend Analyzer.The `README.md` has been updated successfully.
-
--   The "Description" and "Features" sections were slightly updated to mention the Streamlit Web UI.
--   The "Project Structure" was updated to include `streamlit_app.py`.
--   The "Running the Application" section was reorganized to have subsections for "CLI Mode" and "Streamlit Web UI Mode".
--   The "Building and Running with Docker" section was updated to clarify that the default `docker run` command starts the Streamlit UI and how to map the port. It also includes instructions for running the CLI version within Docker.
--   The new "Manual Web UI Testing" section has been added with the detailed test cases as specified:
-    1.  Starting the Application
-    2.  Initial UI Elements
-    3.  Valid Inputs & Successful Path (Simulated)
-    4.  Missing API Key
-    5.  Missing Symbol
-    6.  Interaction & Error Message Clarity
--   An optional note for a CLI-based smoke test for Streamlit was also included.
-
-The `README.md` should now provide comprehensive guidance for both CLI and Web UI usage, including manual testing steps for the Web UI.
+This README provides a comprehensive guide for users and developers of the Cryptocurrency Trend Analyzer.
